@@ -2,7 +2,7 @@
 
 const NavBar = () => {
     return (
-        <div>
+        <>
             <h1 className="logo">LAI MAN WAI</h1>
             <div>
                 <a href="#home" className="navbar_link paragraph">Home</a>
@@ -11,8 +11,7 @@ const NavBar = () => {
                 <a href="#projects" className="navbar_link paragraph">Projects</a>
                 <button className="button paragraph">Contact Me</button>
             </div>
-
-        </div>
+        </>
     );
 }
 

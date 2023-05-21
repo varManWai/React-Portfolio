@@ -1,31 +1,30 @@
-import React from 'react';
-import Intro from './components/intro';
-import About from './components/about';
-import Experiences from './components/experience';
-import Projects from './components/projects';
-import Footer from './components/footer';
-import NavBar from './components/navbar';
+import React from "react";
+import Intro from "./components/intro";
+import About from "./components/about";
+import Experiences from "./components/experience";
+import Projects from "./components/projects";
+import Footer from "./components/footer";
+import NavBar from "./components/navbar";
+
+import "./App.css";
+import { Container } from "@mui/material";
 
 const App = () => {
   return (
-    <div>
-
+    <div className="page">
       <NavBar />
+      <div className="objectCenter">
+        <Intro />
 
-      <Intro />
+        <About />
 
-      <About />
+        <Experiences />
 
-      <Experiences />
-
-      <Projects />
-
+        <Projects />
+      </div>
       <Footer />
+    </div>
+  );
+};
 
-    </div >
-  )
-}
-
-export default App
-
-
+export default App;
