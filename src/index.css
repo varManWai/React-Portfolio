@@ -47,7 +47,7 @@ body {
 #root {
   width: 100%;
   box-sizing: border-box !important;
-  overflow: hidden;
+  
 }
 
 h1 {
@@ -86,3 +86,19 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+@media only screen and (max-width: 1060px) {
+  :root {
+    font-size:50%;
+  
+  }
+}
+
+
+@media only screen and (max-width: 635px) {
+  :root {
+    font-size: 35%;
+  
+  }
+}
+

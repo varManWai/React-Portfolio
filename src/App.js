@@ -4,7 +4,7 @@ import About from "./components/about";
 import Experiences from "./components/experience";
 import Projects from "./components/projects";
 import Footer from "./components/footer";
-import NavBar from "./components/navbar";
+import DrawerAppBar from "./components/navbar";
 
 import "./App.css";
 import { Container } from "@mui/material";
@@ -12,7 +12,7 @@ import { Container } from "@mui/material";
 const App = () => {
   return (
     <div className="page">
-      <NavBar />
+      <DrawerAppBar />
       <div className="objectCenter">
         <Intro />
 
