@@ -1,14 +1,14 @@
 import '../App.css';
-import logo from "../assets/personal.svg";
+import logo from "../assets/personal.png";
 
 import Grid from '@mui/material/Grid';
 
 const Intro = () => {
     return (
-        <div className="section">
+        <section id="home" className="section marginTop20 disable-text-selection">
             <Grid container  columnSpacing={{ xs: 0, sm: 0, md: 0 }} className="alignCenter">
                 <Grid xs={12} sm={12} md={6} className="alignCenter">
-                    <img className="introImage" src={logo} alt="This is my photo" srcSet="" />
+                    <img className="introImage" src={logo} alt="This is my selfie" srcSet="" />
                 </Grid>
                 <Grid xs={12} sm={12} md={6} className="alignCenter">
                     <div>
@@ -17,7 +17,7 @@ const Intro = () => {
                     </div>
                 </Grid>
             </Grid>
-        </div>
+        </section>
     );
 }
 

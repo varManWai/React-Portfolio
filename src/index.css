@@ -1,12 +1,14 @@
-:root {
+:root,
+:root.dark {
   font-family: "Kanit", sans-serif;
   line-height: 1.5;
   font-weight: 400;
   font-size: 62.5%;
 
   --highlight: #23ce6b;
-  --primary: #272d2d;
-  --paragraph: #f6f8ff;
+  --primary: #f6f8ff;
+  --paragraph: #272d2d;
+  
 
   color-scheme: light dark;
   color: var(--paragraph);
@@ -18,7 +20,6 @@
   -moz-osx-font-smoothing: grayscale;
   text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-
 }
 
 .hyperlink {
@@ -41,13 +42,11 @@ body {
   /* overflow-x: hidden; */
 
   /* padding: 0px 4%; */
-
 }
 
 #root {
   width: 100%;
   box-sizing: border-box !important;
-  
 }
 
 h1 {
@@ -76,8 +75,8 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: var(--primary);
-    background-color: var(--paragraph);
+    --primary: #272d2d;
+  --paragraph: #f6f8ff;
   }
   a:hover {
     color: #747bff;
@@ -87,18 +86,31 @@ button:focus-visible {
   }
 }
 
-@media only screen and (max-width: 1060px) {
-  :root {
-    font-size:50%;
-  
+:root.light {
+  --primary: #272d2d;
+  --paragraph: #f6f8ff;
+}
+
+@media only screen and (max-width: 1600px) {
+  :root,
+  :root.light,
+  :root.dark {
+    font-size: 45%;
   }
 }
 
+@media only screen and (max-width: 1200px) {
+  :root,
+  :root.light,
+  :root.dark {
+    font-size: 40%;
+  }
+}
 
 @media only screen and (max-width: 635px) {
-  :root {
+  :root,
+  :root.light,
+  :root.dark {
     font-size: 35%;
-  
   }
 }
-
