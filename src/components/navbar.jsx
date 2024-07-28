@@ -18,8 +18,9 @@ import Switch from '@mui/material/Switch';
 import { styled } from '@mui/material/styles';
 
 const drawerWidth = 300;
-const navItems = ['Home', 'About', 'Experience', 'Projects'];
-const navItems2 = ['Home', 'About', 'Experience', 'Projects', 'Contact Me'];
+
+const deskNavItems = ['About','Skills', 'Work', 'Projects', 'Contact'];
+const mobileNavItems = ['About','Skills', 'Work', 'Projects', 'Contact Me', 'Resume'];
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
@@ -101,11 +102,12 @@ function DrawerAppBar(props) {
       </Typography>
       <Divider />
       <List>
-        {navItems2.map((item) => (
+        {mobileNavItems.map((item) => (
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
               {item === "Contact Me" ?
-                <a href="#contactMe" className="nav_btn2">{item}</a> :
+                // #TODO Change to Resume and download the file. 
+                <a href="#contact" className="nav_btn2">{item}</a> :
                 <a href={`#${item.toLowerCase()}`} className="nav_btn2">{item}</a>
               }
               {/* <ListItemText primary={item}  /> */}
@@ -143,10 +145,14 @@ function DrawerAppBar(props) {
             <FormControlLabel
               control={<MaterialUISwitch sx={{ m: 1 }} onClick={toggleDarkMode} />}
             />
-            {navItems.map((item) => (
-                <a key={item} href={`#${item.toLowerCase()}`} className="nav_btn">{item}</a>
+            {deskNavItems.map((item) => (
+
+              item === "Contact" ?
+              <a key={item} href={`#${item.toLowerCase()}`} className="nav_btn">{item}</a>:
+                <a key={item} href={`#${item.toLowerCase()}`} className="nav_btn borderRight">{item}</a>
+
             ))}
-            <a href="#contactMe" className="contactMe_btn" >Contact Me</a>
+            <a href="#contact" className="contactMe_btn" >Resume</a>
           </Box>
         </Toolbar>
       </AppBar>

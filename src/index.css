@@ -8,7 +8,7 @@
   --highlight: #23ce6b;
   --primary: #f6f8ff;
   --paragraph: #272d2d;
-  
+  --hover: #188747;
 
   color-scheme: light dark;
   color: var(--paragraph);
@@ -76,7 +76,8 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     --primary: #272d2d;
-  --paragraph: #f6f8ff;
+    --paragraph: #f6f8ff;
+    --hover: #4AFF95;
   }
   a:hover {
     color: #747bff;
@@ -89,6 +90,7 @@ button:focus-visible {
 :root.light {
   --primary: #272d2d;
   --paragraph: #f6f8ff;
+  --hover: #4AFF95;
 }
 
 @media only screen and (max-width: 1600px) {
@@ -111,6 +113,6 @@ button:focus-visible {
   :root,
   :root.light,
   :root.dark {
-    font-size: 35%;
+    font-size: 30%;
   }
 }

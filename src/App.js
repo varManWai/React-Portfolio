@@ -1,6 +1,7 @@
-import React, { useEffect } from "react";
 import About from "./components/about";
+import Skills from "./components/skills";
 import Experiences from "./components/experience";
+import Contact from "./components/contact";
 import Footer from "./components/footer";
 import Intro from "./components/intro";
 import DrawerAppBar from "./components/navbar";
@@ -18,11 +19,15 @@ const App = () => {
 
         <About />
 
+        <Skills />
+
         <Experiences />
 
         <Projects />
+
+        <Contact />
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
