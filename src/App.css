@@ -13,13 +13,52 @@
   font-style: italic;
 }
 
+.header1-withoutMar{
+  font-size: 4.8rem;
+  font-weight: 800;
+  font-style: italic;
+
+
+  margin: 0rem;
+
+  /* border: red solid 2px; */
+}
+
 .header2 {
   font-size: 3.2rem;
   font-weight: 500;
 }
+.header2-withoutMar {
+  font-size: 3.2rem;
+  font-weight: 500;
+
+  margin: 0rem;
+
+  /* border: red solid 2px; */
+}
+.header3 {
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+.header3-withoutMar {
+  font-size: 2.4rem;
+  font-weight: 500;
+
+  margin: 0rem;
+
+  /* border: red solid 2px; */
+}
+
+.inline{
+  display: inline !important;
+}
 
 .paragraph {
   font-size: 2.4rem;
+}
+.paragraph-withoutMar {
+  font-size: 2.4rem;
+  margin: 0rem;
 }
 
 .marginTop-0{
@@ -384,6 +423,75 @@
 
   
   
+}
+
+/* My Skills Section */
+.skills-cont{
+  /* border: rgb(255, 0, 0) solid 2px; */
+
+
+  display: inline-flex;
+  flex-wrap:wrap;
+  margin: auto;
+
+}
+.skills-cont-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 20rem;
+  height: 6rem;
+  margin: 2rem 2rem ;
+  padding: auto 5rem;
+  /* border: #f1f1f1dc 2px solid; */
+  background-color: #f1f1f1dc;
+  color: #272d2d;
+}
+.skills-cont-btn:hover{
+  background-color: #dfdfdfdc;
+  border: none;
+}
+.skills-cont-btn:active{
+  background-color: #dfdfdfdc;
+  border: none;
+}
+
+.SkillsIcon{
+  height: 2.5rem !important;
+  width: 7rem !important;
+  max-height: 3rem !important;
+  max-width: 7rem !important;
+  
+  /* border: red solid 2px; */
+}
+.skills{
+  font-size: 2rem;
+  /* border: red solid 2px; */
+  width: 15rem;
+  text-align: left;
+  padding-left: 1rem;
+  text-transform: capitalize;
+}
+
+/* Experience Section */
+.paper-cont{
+  background-color: var(--primary) !important;
+  padding: 3rem 3rem;
+  box-shadow:
+      0 1px 1px hsl(0deg 0% 0% / 0.075),
+      0 2px 2px hsl(0deg 0% 0% / 0.075),
+      0 4px 4px hsl(0deg 0% 0% / 0.075),
+      0 8px 8px hsl(0deg 0% 0% / 0.075),
+      0 16px 16px hsl(0deg 0% 0% / 0.075)
+    ;
+}
+
+.paper-cont>div{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  /* border: red solid 2px; */
 }
 
 /* Contact Section */

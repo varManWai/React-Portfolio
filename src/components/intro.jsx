@@ -19,7 +19,7 @@ const Intro = () => {
 
                         <div className='info_btn_alignLeft marginTop40'>
                             <div>
-                                <a href="#contactMe" className='info_btn1 info_btn_spacing header2 justify'>Contact Me</a>
+                                <a href="#contact" className='info_btn1 info_btn_spacing header2 justify'>Contact Me</a>
                             </div>
                             <div>
                                 <a href="#about" className='info_btn2 info_btn_spacing header2 justify'>Learn More <ArrowForwardIcon className='info_icon'/></a>
